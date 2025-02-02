@@ -11,11 +11,13 @@ This repository contains the implementations of LITE as well as the experimental
 ## Citation
 If you use the work released here for your research, please cite our paper:
 ```
-@inproceedings{menet2025,
-  title={LITE: Efficiently Estimating Gaussian Probability of Maximality},
-  author={Menet, Nicolas and Jonas, Hübotter and Parnian, Kassraie, and Krause, Andreas},
-  booktitle={International Conference on Artificial Intelligence and Statistics},
-  year={2025},
+@inproceedings{menet2025lite,
+	author = {Menet, Nicolas and H{\"u}botter, Jonas and Kassraie, Parnian and Krause, Andreas},
+	booktitle = {Proc. International Conference on Artificial Intelligence and Statistics (AISTATS)},
+	pdf = {https://arxiv.org/pdf/2501.13535},
+	title = {LITE: Efficiently Estimating Gaussian Probability of Maximality},
+	month = {May},
+	year = {2025},
   organization={PMLR}
 }
 ```
