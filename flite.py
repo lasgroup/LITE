@@ -62,7 +62,7 @@ def flite_pom(gaussian_means:jax.Array, gaussian_stds:jax.Array, epsilon:float=N
         jax.Array: (m,) the probabilities of maximality
     """
     if epsilon is None:
-        epsilon = 1/(100 * means.size) 
+        epsilon = 1/(100 * gaussian_means.size) 
     kappa_low, kappa_up = _find_normalising_threshold(gaussian_means, gaussian_stds, epsilon)
     r_up =  _p_gaussians_geq_threshold(gaussian_means, gaussian_stds, threshold=kappa_low)
     r_low = _p_gaussians_geq_threshold(gaussian_means, gaussian_stds, threshold=kappa_up)
